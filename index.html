@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="col">
-          <img src="./img/legBot.png" alt="LegBot image" class="mx-auto">
+          <img src="./img/legBot.png" alt="LegBot image" class="mx-auto legbot-face">
         </div>
       </div>
       <div class="row">
@@ -46,24 +46,24 @@
         <!-- SET -->
         <div class="row feature">
           <div class="feature-title">Get a LEGO set</div>
-          <div class="col feature-description">
+          <div class="col-12 col-sm-6 feature-description">
             Returns informations about a certain set.
             <div class="feature-command">
-              <div class="command">
+              <div class="command align-middle">
                 !set <span class="random4">8723</span></div>
               </div>
           </div>
-          <div class="col feature-image">
+          <div class="col-12 col-sm-6 feature-image">
             <img src="./img/set-example.png" alt="Example of LegBot result when fetching a set" class="img-fluid">
           </div>
         </div>
         <!-- PARTS -->
         <div class="row feature">
           <div class="feature-title">Get a LEGO part</div>
-          <div class="col feature-image">
+          <div class="col-12 col-sm-6 feature-image">
             <img src="./img/part-example.png" alt="Example of LegBot result when fetching a set" class="img-fluid">
           </div>
-          <div class="col feature-description">
+          <div class="col-12 col-sm-6 feature-description">
             Returns available data about a certain LEGO piece. <br/>
             No more cross purposes when debating about your moc! 
             <ul>
@@ -72,7 +72,7 @@
               <li>Shopping links</li>
             </ul> 
             <div class="feature-command">
-              <div class="command">
+              <div class="command align-middle">
                 !part <span class="random6">15712</span></div>
               </div>
           </div>
@@ -80,53 +80,62 @@
         <!-- MORE -->
         <div class="row feature more">
           <div class="feature-title">... and more!</div>
-          <table>
-            <tr>
-              <td class="align-middle">
-                <img src="./img/review-example.png" alt="Example of 75098" class="badset">
-              </td>
-              <td>
-                <div class="feature-command">
-                  How bad is this set ?
-                  <div class="command">
-                    !review <span class="random4">75098</span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="align-middle">Get a direct link to Brickset about the set
-                <div class="feature-command">
-                  <div class="command">
-                    !bs <span class="random4">8723</span>
-                  </div>
-                </div>
-              </td>
-              <td class="align-middle">Get a direct link to Bricklink about the set
-                <div class="feature-command">
-                  <div class="command">
-                    !bl <span class="random4">8723</span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="align-middle">Display the LegBot commands
-                <div class="feature-command">
-                  <div class="command">
-                    !help
-                  </div>
-                </div>
-              </td>
-              <td class="align-middle">Display the LegBot credits
-                <div class="feature-command">
-                  <div class="command">
-                    !credits
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </table>
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-12 col-sm-6">
+					<img src="./img/review-example.png" alt="Example of 75098" class="badset img-fluid">
+				  </div>
+				  <div class="col-12 col-sm-6">
+					<div class="align-middle">How bad is this set ?
+						<div class="feature-command">
+							<div class="command">
+								!review <span class="random4">75098</span>
+							</div>
+						</div>
+					</div>
+				  </div>
+			  </div>
+			  <div class="row">
+				<div class="col-12 col-sm-6">
+					<div class="align-middle">Get a direct link to Brickset about the set
+						<div class="feature-command">
+							<div class="command">
+							!bs <span class="random4">8723</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6">
+					<div class="align-middle">Get a direct link to Bricklink about the set
+						<div class="feature-command">
+							<div class="command">
+							!bl <span class="random4">8723</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-12 col-sm-6">
+					<div class="align-middle">Display the LegBot commands
+						<div class="feature-command">
+							<div class="command">
+								!help
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6">
+					<div class="align-middle">Display the LegBot credits
+						<div class="feature-command">
+							<div class="command">
+								!credits
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+		  </div>
           </div>
         </div>
       </div>
@@ -139,7 +148,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-12 col-sm-6">
             <h4>Credits</h4>
             LegBot is using the following datasources and APIs : 
             <ul>
@@ -152,10 +161,10 @@
 
             LegBot is based on the <a href="https://discord.js.org/">DiscordJS</a> library. </a>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-6">
             <div class="footer-section">
               <h4>Contribute</h4>
-              LegBot's source code is hosted on<a href="https://github.com/ThibautPlg/Discord-LEGO-Bot" target="blank" rel="nofollow">Github</a>
+              LegBot's source code is hosted on <a href="https://github.com/ThibautPlg/Discord-LEGO-Bot" target="blank" rel="nofollow">Github</a>
             </div>
             <div class="footer-section">
               <h4>Contact</h4>

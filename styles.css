@@ -41,12 +41,14 @@ header .col {
     display:block;
 }
 .btn-primary {
-    background-color: #5a71c4;
+	background-color: #5a71c4;
+	border-color: transparent;
     padding: 5px 50px;
     font-size: 1.3rem;
     margin: 0 10px;
 }
 .btn-primary:hover {
+	border-color: transparent;
     background-color: #7289DA;
 }
 .features-section {
@@ -54,6 +56,9 @@ header .col {
     margin-top: -10px;
     padding-top: 20px;
     padding-bottom: 50px;
+}
+a, a:hover, a:visited {
+	color: #7ce7ff;
 }
 .feature {
     padding: 10px 0;
@@ -91,9 +96,9 @@ h2 {
 .command {
     margin: 10px;
     padding: 20px;
-    background: gray;
+    background: #23272A;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 .feature-image img {
     margin: auto;
@@ -111,13 +116,12 @@ h2 {
     margin-top: 20px;
 }
 .badset {
-    margin: auto;
+    margin: auto auto 20px;
     display: block;
     border-radius: 15px;
     -webkit-box-shadow: 10px 10px 23px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 23px -8px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 23px -8px rgba(0,0,0,0.75);
-    height: 200px;
     width: auto;
 }
 .align-middle {
@@ -148,6 +152,28 @@ footer {
     font-weight: normal;
     font-style: normal;
 
+}
+
+@media screen and (max-width: 520px) {
+	.container {
+		margin: 50px auto;
+	}
+	.legbot-face {
+		height: 100px;
+		width: auto;
+	}
+	.header-text {
+		position: initial;
+	}
+	.btn-primary {
+		margin-bottom: 10px;
+	}
+	.badset {
+		display: none;
+	}
+	.more {
+		margin-bottom: -100px;
+	}
 }
 
 /* Stolen from Discord official site */
