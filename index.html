@@ -1,182 +1,247 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 
 
-    <title>LegBot, the first LEGO Discord Bot</title>
-  </head>
-  <body>
+	<title>LegBot, the first LEGO Discord Bot</title>
+</head>
+<body>
 
-    <header class="container">
-      <div class="row">
-        <div class="col header-text-container">
-          <div class="header-text">
-            <h1>LegBot</h1>
-            <span class="subtitle">The LEGO Discord bot</span>
-          </div>
-        </div>
-        <div class="col">
-          <img src="./img/legBot.png" alt="LegBot image" class="mx-auto legbot-face">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col" style="text-align: center">
-          <a href="https://discordapp.com/oauth2/authorize?client_id=666184693531672608&scope=bot&permissions=0" target="blank">
-            <button type="button" class="btn btn-primary">Invite</button>
-          </a>
-          <button type="button" class="btn btn-primary scroll">See the commands</button>
-        </div>
-      </div>
-    </header>
+	<header class="container">
+		<div class="row">
+			<div class="col header-text-container">
+				<div class="header-text">
+					<h1>LegBot</h1>
+					<span class="subtitle">The LEGO Discord bot</span>
+				</div>
+			</div>
+			<div class="col">
+				<img src="./img/legBot.png" alt="LegBot image" class="mx-auto legbot-face">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" style="text-align: center">
+				<a href="https://discordapp.com/oauth2/authorize?client_id=666184693531672608&scope=bot&permissions=0" target="blank">
+					<button type="button" class="btn btn-primary">Invite</button></a>
+					<button type="button" class="btn btn-primary scroll">See the commands</button>
+				</div>
+			</div>
+		</header>
 
-    <!-- Stolen from Discord official site-->
-    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="currentColor"></path></svg>
-    <!-- /Stolen -->
-    <section id="features-link" class="features-section">
-      <div class="container">
-        <h2>Features</h2>
-        <!-- SET -->
-        <div class="row feature">
-          <div class="feature-title">Get a LEGO set</div>
-          <div class="col-12 col-sm-6 feature-description">
-            Returns informations about a certain set.
-            <div class="feature-command">
-              <div class="command align-middle">
-                !set <span class="random4">8723</span></div>
-              </div>
-          </div>
-          <div class="col-12 col-sm-6 feature-image">
-            <img src="./img/set-example.png" alt="Example of LegBot result when fetching a set" class="img-fluid">
-          </div>
-        </div>
-        <!-- PARTS -->
-        <div class="row feature">
-          <div class="feature-title">Get a LEGO part</div>
-          <div class="col-12 col-sm-6 feature-image">
-            <img src="./img/part-example.png" alt="Example of LegBot result when fetching a set" class="img-fluid">
-          </div>
-          <div class="col-12 col-sm-6 feature-description">
-            Returns available data about a certain LEGO piece. <br/>
-            No more cross purposes when debating about your moc! 
-            <ul>
-              <li>Piece still in production ?</li>
-              <li>Similar molds</li>
-              <li>Shopping links</li>
-            </ul> 
-            <div class="feature-command">
-              <div class="command align-middle">
-                !part <span class="random6">15712</span></div>
-              </div>
-          </div>
-        </div>
-        <!-- MORE -->
-        <div class="row feature more">
-          <div class="feature-title">... and more!</div>
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-12 col-sm-6">
-					<img src="./img/review-example.png" alt="Example of 75098" class="badset img-fluid">
-				  </div>
-				  <div class="col-12 col-sm-6">
-					<div class="align-middle">How bad is this set ?
+		<section class="features-section card">
+			<div class="container">
+				<h2>Features</h2>
+				<!-- SET -->
+				<div class="row feature">
+					<div class="feature-title">Get a LEGO set</div>
+					<div class="col-12 col-sm-6 feature-description">
+						Returns informations about a certain set.
 						<div class="feature-command">
-							<div class="command">
-								!review <span class="random4">75098</span>
+							<div class="command align-middle">
+								!set <span class="random4">8723</span>
 							</div>
 						</div>
 					</div>
-				  </div>
-			  </div>
-			  <div class="row">
-				<div class="col-12 col-sm-6">
-					<div class="align-middle">Get a direct link to Brickset about the set
+					<div class="col-12 col-sm-6 feature-image">
+						<img src="./img/set-example.png" alt="Example of LegBot result when fetching a set" class="img-fluid">
+					</div>
+				</div>
+				<!-- PARTS -->
+				<div class="row feature">
+					<div class="feature-title">Get a LEGO part</div>
+					<div class="col-12 col-sm-6 feature-image">
+						<img src="./img/part-example.png" alt="Example of LegBot result when fetching a set" class="img-fluid">
+					</div>
+					<div class="col-12 col-sm-6 feature-description">
+						Returns available data about a certain LEGO piece. <br/>
+						No more cross purposes when debating about your moc!
+						<ul>
+							<li>Piece still in production ?</li>
+							<li>Similar molds</li>
+							<li>Shopping links</li>
+						</ul>
 						<div class="feature-command">
-							<div class="command">
-							!bs <span class="random4">8723</span>
+							<div class="command align-middle">
+								!part <span class="random6">15712</span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6">
-					<div class="align-middle">Get a direct link to Bricklink about the set
-						<div class="feature-command">
-							<div class="command">
-							!bl <span class="random4">8723</span>
+				<!-- MORE -->
+				<div class="row feature more">
+					<div class="feature-title">... and more!</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<img src="./img/review-example.png" alt="Example of 75098" class="badset img-fluid">
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="align-middle">How bad is this set ?
+									<div class="feature-command">
+										<div class="command">
+											!review <span class="random4">75098</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<div class="align-middle">Get a direct link to Brickset about the set
+									<div class="feature-command">
+										<div class="command">
+											!bs <span class="random4">8723</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="align-middle">Get a direct link to Bricklink about the set
+									<div class="feature-command">
+										<div class="command">
+											!bl <span class="random4">8723</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			  </div>
-			  <div class="row">
-				<div class="col-12 col-sm-6">
-					<div class="align-middle">Display the LegBot commands
-						<div class="feature-command">
-							<div class="command">
-								!help
+			</div>
+		</section>
+
+		<section id="features-link" class="features-section card">
+			<div class="container">
+				<h2>All commands</h2>
+				<div class="row feature">
+					<div class="container">
+						<div class="row">
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<tbody>
+										<tr>
+											<td><b>!set</b> [set number]</td>
+											<td>Show a set data</td>
+										</tr>
+										<tr>
+											<td><b>!search</b> [query]</td>
+											<td>Search for a set by name (Beta feature, may be surprisingly wrong)</td>
+										</tr>
+										<tr>
+											<td><b>!part</b> [part number]</td>
+											<td>Show a part data (Bricklink ID)</td>
+										</tr>
+										<tr>
+											<td><b>!part</b> " search terms "</td>
+											<td>Search for a part name (Beta, not usabe in the middle of a sentence)</td>
+										</tr>
+										<tr>
+											<td><b>!mixeljoint</b> [query]</td>
+											<td>Show a list of the most used mixeljoint (with an awesome drawing of each)</td>
+										</tr>
+										<tr>
+											<td><b>!bs</b> [set number]</td>
+											<td>Get a direct link to the Brickset page of the set</td>
+										</tr>
+										<tr>
+											<td><b>!bl</b> [set number]</td>
+											<td>Get a direct link to the Bricklink page of the set</td>
+										</tr>
+										<tr>
+											<td><b>!review</b> [set number]</td>
+											<td>Get the set score based on the BrickInsights review</td>
+										</tr>
+										<tr>
+											<td><b>!help</b></td>
+											<td>Show all the bot commands</td>
+										</tr>
+										<tr>
+											<td><b>!inviteLegBot</b></td>
+											<td>Get a link to invite LegBot to your server</td>
+										</tr>
+										<tr>
+											<td><b>!credits</b></td>
+											<td>Display the bot credits</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6">
-					<div class="align-middle">Display the LegBot credits
-						<div class="feature-command">
-							<div class="command">
-								!credits
+				<div class="row feature">
+					<div class="container">
+						<div class="feature-title">Interactions</div>
+						<div class="row">On most of Legbot's messages you can add reactions to have specific behaviour.</div>
+					</div>
+				</div>
+				<div class="row feature interactions">
+					<div class="container">
+						<p class="interactions">
+							<span class="emojis">🔎,🔍 or 🖼️</span> within 120 seconds <br>
+							<span class="sub-emojis">:mag_right: :mag: :frame:</span><br>
+							Will post a bigger picture of the set/part. (Useful on mobile where you can't click the thumbnail !)
+						</p>
+					</div>
+					<div class="container">
+						<p class="interactions">
+							<span class="emojis">🗑️</span> within 120 seconds <br>
+							<span class="sub-emojis">:wastebasket:</span><br>
+							Will delete the message. Works on the pictures posted by the 🔎,🔍 or 🖼️ interactions.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm">
+							<h4>Credits</h4>
+							LegBot is using the following datasources and APIs :
+							<ul>
+								<li><a href="https://rebrickable.com/api/" target="blank" rel="nofollow">Rebrickable API</a></li>
+								<li><a href="https://brickinsights.com/" target="blank" rel="nofollow">Brick Insight public API</a></li>
+								<li><a href="https://brickset.com" target="blank" rel="nofollow">Brickset API</a></li>
+								<li><a href="https://www.bricklink" target="blank" rel="nofollow">BrickLink links</a></li>
+								<li><a href="https://www.brickowl.com" target="blank" rel="nofollow">BrickOwl links</a></li>
+							</ul>
+
+							LegBot is based on the <a href="https://discord.js.org/">DiscordJS</a> library. </a>
+						</div>
+						<div class="col-sm">
+							<div class="footer-section">
+								<h4>Contribute</h4>
+								LegBot's source code is hosted on <a href="https://github.com/ThibautPlg/Discord-LEGO-Bot" target="blank" rel="nofollow">Github</a> <br><br>
+								Consider helping with Legbot's hosting ! <br>
+								<a href="https://coindrop.to/thibautplg" target="_blank"><img src="https://coindrop.to/embed-button.png" style="border-radius: 10px; height: 57px !important;width: 229px !important;" alt="Coindrop.to me"></img></a>
+							</div>
+
+						</div>
+						<div class="col-sm">
+							<div class="footer-section">
+								<h4>Contact</h4>
+								<a href="https://twitter.com/intent/tweet?screen_name=thibaut_plg&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-show-count="false">Tweet to @thibaut_plg</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								<br>
+								or create an <a href="https://github.com/ThibautPlg/Discord-LEGO-Bot/issues" target="blank">issue on Github.</a>
+							</div>
+							<div class="footer-section">
+								<h4>Roadmap</h4>
+								Public roadmap is available <a href="https://github.com/ThibautPlg/Discord-LEGO-Bot/projects/1">here</a></a>
 							</div>
 						</div>
 					</div>
 				</div>
-			  </div>
-		  </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Stolen from Discord official site... again :p-->
-    <svg class="wave2" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="currentColor"></path></svg>
-    <!-- /Stolen -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6">
-            <h4>Credits</h4>
-            LegBot is using the following datasources and APIs : 
-            <ul>
-              <li><a href="https://rebrickable.com/api/" target="blank" rel="nofollow">Rebrickable API</a></li>
-              <li><a href="https://brickinsights.com/" target="blank" rel="nofollow">Brick Insight public API</a></li>
-              <li><a href="https://brickset.com" target="blank" rel="nofollow">Brickset API</a></li>
-              <li><a href="https://www.bricklink" target="blank" rel="nofollow">BrickLink links</a></li>
-              <li><a href="https://www.brickowl.com" target="blank" rel="nofollow">BrickOwl links</a></li>
-            </ul>
-
-            LegBot is based on the <a href="https://discord.js.org/">DiscordJS</a> library. </a>
-          </div>
-          <div class="col-12 col-sm-6">
-            <div class="footer-section">
-              <h4>Contribute</h4>
-              LegBot's source code is hosted on <a href="https://github.com/ThibautPlg/Discord-LEGO-Bot" target="blank" rel="nofollow">Github</a>
-            </div>
-            <div class="footer-section">
-              <h4>Contact</h4>
-              <a href="https://twitter.com/intent/tweet?screen_name=thibaut_plg&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-show-count="false">Tweet to @thibaut_plg</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              <br>
-              or create an <a href="https://github.com/ThibautPlg/Discord-LEGO-Bot/issues" target="blank">issue on Github.</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+			</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -184,3 +249,4 @@
     <script src="./index.js"></script>
   </body>
 </html>
+ Updating the page with new commands and screenshots
