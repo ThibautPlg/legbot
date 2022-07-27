@@ -37,6 +37,22 @@
 			</div>
 		</header>
 
+		<section class="features-section card bad">
+			<div class="container">
+				<h2>The end of the <span class="exclamation">!</span> command...</h2>
+				<div class="row">
+					<p>Since August 31 2022, Discord decided to remove the ability for the bots to read the content of messages in chat.
+					This is a very <b>good initiative</b> to protect privacy, as a bot could basically be a message collector on every server without anyone knowing. </p>
+					<p>Unfortunately that means that Legbot can not read the part of your message with an exclamation point and answer to that.</p>
+					<p>I tried to apply for the "intent" to have access to the messages, but Discord decided that the features were not worth it.</p>
+					<p>Please enjoy Legbot as before using <span class="exclamation">/</span> commands now!</p>
+				</div>
+				<div class="row">
+					<a href="https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Privileged-Intent-FAQ">Discord's devs blog post</a>
+				</div>
+			</div>
+		</section>
+
 		<section class="features-section card">
 			<div class="container">
 				<h2>Features</h2>
@@ -47,7 +63,7 @@
 						Returns informations about a certain set.
 						<div class="feature-command">
 							<div class="command align-middle">
-								!set <span class="random4">8723</span>
+								/set <span class="random4">8723</span>
 							</div>
 						</div>
 					</div>
@@ -71,7 +87,7 @@
 						</ul>
 						<div class="feature-command">
 							<div class="command align-middle">
-								!part <span class="random6">15712</span>
+								/part <span class="random6">15712</span>
 							</div>
 						</div>
 					</div>
@@ -88,7 +104,7 @@
 								<div class="align-middle">How bad is this set ?
 									<div class="feature-command">
 										<div class="command">
-											!review <span class="random4">75098</span>
+											/review <span class="random4">75098</span>
 										</div>
 									</div>
 								</div>
@@ -96,19 +112,19 @@
 						</div>
 						<div class="row">
 							<div class="col-12 col-sm-6">
-								<div class="align-middle">Get a direct link to Brickset about the set
+								<div class="align-middle">Get Brickset's random set of the day
 									<div class="feature-command">
 										<div class="command">
-											!bs <span class="random4">8723</span>
+											/setoftheday
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6">
-								<div class="align-middle">Get a direct link to Bricklink about the set
+								<div class="align-middle">Get all commands
 									<div class="feature-command">
 										<div class="command">
-											!bl <span class="random4">8723</span>
+											/legbot
 										</div>
 									</div>
 								</div>
@@ -129,47 +145,35 @@
 								<table class="table table-striped">
 									<tbody>
 										<tr>
-											<td><b>!set</b> [set number]</td>
+											<td><b>/set</b> [set number]</td>
 											<td>Show a set data</td>
 										</tr>
 										<tr>
-											<td><b>!search</b> [query]</td>
+											<td><b>/search</b> [query]</td>
 											<td>Search for a set by name (Beta feature, may be surprisingly wrong)</td>
 										</tr>
 										<tr>
-											<td><b>!part</b> [part number]</td>
+											<td><b>/part</b> [part number]</td>
 											<td>Show a part data (Bricklink ID)</td>
 										</tr>
 										<tr>
-											<td><b>!part</b> " search terms "</td>
+											<td><b>/part</b> " search terms "</td>
 											<td>Search for a part name (Beta, not usabe in the middle of a sentence)</td>
 										</tr>
 										<tr>
-											<td><b>!mixeljoint</b> [query]</td>
-											<td>Show a list of the most used mixeljoint (with an awesome drawing of each)</td>
+											<td><b>/setoftheday</b></td>
+											<td>Get Brickset's random set of the day</td>
 										</tr>
 										<tr>
-											<td><b>!bs</b> [set number]</td>
-											<td>Get a direct link to the Brickset page of the set</td>
-										</tr>
-										<tr>
-											<td><b>!bl</b> [set number]</td>
-											<td>Get a direct link to the Bricklink page of the set</td>
-										</tr>
-										<tr>
-											<td><b>!review</b> [set number]</td>
+											<td><b>/review</b> [set number]</td>
 											<td>Get the set score based on the BrickInsights review</td>
 										</tr>
 										<tr>
-											<td><b>!help</b></td>
+											<td><b>/legbot</b></td>
 											<td>Show all the bot commands</td>
 										</tr>
 										<tr>
-											<td><b>!inviteLegBot</b></td>
-											<td>Get a link to invite LegBot to your server</td>
-										</tr>
-										<tr>
-											<td><b>!credits</b></td>
+											<td><b>/credits</b></td>
 											<td>Display the bot credits</td>
 										</tr>
 									</tbody>
@@ -249,4 +253,3 @@
     <script src="./index.js"></script>
   </body>
 </html>
- Updating the page with new commands and screenshots
